@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "target": "es2022",
+    "outDir": "types",
+    "skipLibCheck": true
+  },
+  "exclude": ["**/*.spec.js"],
+  "include": ["**/*.js"]
+}

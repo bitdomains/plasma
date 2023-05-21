@@ -1,0 +1,47 @@
+{
+  "name": "@bitdomains/plasma",
+  "version": "0.0.0",
+  "description": "Abstraction layer to easily interact with AVL Trees as an L2 Solution with a interface similar to GetBlok-Plasma",
+  "scripts": {
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "fmt": "prettier --write .",
+    "fmt:check": "prettier --check .",
+    "lint": "eslint src/** --fix",
+    "lint:check": "eslint src/**"
+  },
+  "repository": "bitdomains/plasma",
+  "author": "bitdomains",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@types/jest": "^29.5.1",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
+  },
+  "dependencies": {
+    "@ergoplatform/authenticated-avl-tree": "^0.2.4"
+  },
+  "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "src",
+    "!src/**/*.spec.js",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "engines": {
+    "node": "^16.14 || >=18"
+  }
+}
